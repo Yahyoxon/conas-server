@@ -1,0 +1,33 @@
+{
+  "name": "asiabackend",
+  "version": "1.0.0",
+  "description": "Asia Constructor app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "asia",
+    "constructor"
+  ],
+  "author": "Yahyo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "i18next": "^20.3.1",
+    "i18next-fs-backend": "^1.1.1",
+    "i18next-http-middleware": "^3.1.3",
+    "mongoose": "^5.12.11",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {}
+}
