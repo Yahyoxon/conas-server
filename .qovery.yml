@@ -1,0 +1,15 @@
+---
+application:
+  name: "api-server"
+  project: "conas"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "myFirstDatabase"
+  version: "4.4"
+routers:
+- name: "main-api-server"
+  routes:
+  - application_name: "api-server"
+    paths:
+    - "/*"
