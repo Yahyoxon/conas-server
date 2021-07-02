@@ -6,6 +6,10 @@ const articleModels = new mongoose.Schema(
         markdown:  {
             type: String, required: false
         },
+        titleRu: { type: String, required: true, unique: true },
+        markdownRu:  {
+            type: String, required: false
+        },
         newsImage: {
             type: Object,
             required: false,
