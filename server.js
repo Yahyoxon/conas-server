@@ -18,13 +18,14 @@ i18next.use(Backend).use(middleware.LanguageDetector)
   }
 })
 
+
 const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(middleware.handle(i18next))
 app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
-
+app.use(express.static('./'))
 const PORT = process.env.PORT || 5000;
 console.log('Server is starting......')
 app.listen(PORT, () => console.log(`Server started on port:${PORT}`))
